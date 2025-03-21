@@ -38,7 +38,7 @@ jobs:
           cp -r public/* out/ || true
           ls -la out
         env:
-          NEXT_PUBLIC_BASE_PATH: ''
+          NEXT_PUBLIC_BASE_PATH: '/ayushgoel.github.io'
           NODE_ENV: production
           CI: false
           

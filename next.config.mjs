@@ -12,8 +12,8 @@ const nextConfig = {
     unoptimized: true,
     remotePatterns: [],
   },
-  basePath: '',
-  assetPrefix: '',
+  basePath: '/ayushgoel.github.io',
+  assetPrefix: '/ayushgoel.github.io/',
   distDir: 'out',
   trailingSlash: true,
   eslint: {
