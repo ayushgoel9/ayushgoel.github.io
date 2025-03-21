@@ -10,6 +10,7 @@ const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
+    remotePatterns: [],
   },
   basePath: '',
   assetPrefix: '',
