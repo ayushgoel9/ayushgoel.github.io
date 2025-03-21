@@ -13,6 +13,8 @@ const nextConfig = {
   },
   basePath: '',
   assetPrefix: '',
+  distDir: 'out',
+  trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -24,7 +26,6 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  trailingSlash: true,
 }
 
 mergeConfig(nextConfig, userConfig)
