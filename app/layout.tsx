@@ -20,14 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="stylesheet" href="globals.css" />
-      </head>
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${inter.className} antialiased min-h-screen bg-background`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <div className="min-h-screen flex flex-col">
             <Navbar />
-            <main className="flex-grow">{children}</main>
+            <main className="flex-grow container mx-auto px-4">{children}</main>
             <footer className="py-4 text-center text-sm text-gray-500">
               © {new Date().getFullYear()} Your Name. All rights reserved.
             </footer>

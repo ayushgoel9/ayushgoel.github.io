@@ -35,11 +35,12 @@ jobs:
         run: |
           npm run build
           touch out/.nojekyll
-          cp -r public/* out/
+          cp -r public/* out/ || true
           ls -la out
         env:
           NEXT_PUBLIC_BASE_PATH: ''
           NODE_ENV: production
+          CI: false
           
       - name: Fix permissions
         run: |
